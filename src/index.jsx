@@ -1,5 +1,3 @@
-import React from "react";
-
 const FUNDOS = [
   "#EF4444",
   "#F97316",
