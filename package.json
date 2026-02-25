@@ -1,6 +1,6 @@
 {
   "name": "react-simple-initials",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Um componente React minimalista para avatares com iniciais do nome.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
