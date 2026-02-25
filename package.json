@@ -1,11 +1,12 @@
 {
   "name": "react-simple-initials",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Um componente React minimalista para avatares com iniciais do nome.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.jsx --format cjs,esm"
+    "build": "tsup src/index.tsx --format cjs,esm --dts"
   },
   "keywords": [
     "react",
@@ -19,6 +20,7 @@
     "react": ">=16.8.0"
   },
   "devDependencies": {
+    "@types/react": "^19.2.14",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   }

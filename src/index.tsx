@@ -1,3 +1,10 @@
+interface InitialsAvatarProps {
+  nome?: string;
+  tamanho?: number;
+  fonte?: string;
+  corTexto?: string;
+}
+
 const FUNDOS = [
   "#EF4444",
   "#F97316",
@@ -14,7 +21,7 @@ export default function InitialsAvatar({
   tamanho = 40,
   fonte = "inherit",
   corTexto = "#FFFFFF",
-}) {
+}: InitialsAvatarProps) {
   const tamanhoNome = nome.length;
   const FundoEscolhido = FUNDOS[tamanhoNome % FUNDOS.length];
   const inicial = nome.trim().charAt(0).toUpperCase();

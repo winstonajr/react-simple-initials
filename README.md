@@ -3,7 +3,7 @@
 [![NPM Version](https://img.shields.io/npm/v/react-simple-initials.svg)](https://www.npmjs.com/package/react-simple-initials)
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/react-simple-initials)](https://bundlephobia.com/package/react-simple-initials)
 
-Um componente React minimalista, elegante e ultraleve (menos de 5kB) para gerar avatares coloridos baseados nas iniciais do usuário. Perfeito para painéis, listas de contatos e comentários onde o usuário ainda não enviou uma foto de perfil.
+Um componente React minimalista, elegante e ultraleve para gerar avatares coloridos baseados nas iniciais do usuário. Perfeito para painéis, listas de contatos e comentários onde o usuário ainda não enviou uma foto de perfil.
 
 ---
 
