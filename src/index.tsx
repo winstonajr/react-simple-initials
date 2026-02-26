@@ -1,11 +1,11 @@
-interface InitialsAvatarProps {
-  nome?: string;
-  tamanho?: number;
-  fonte?: string;
-  corTexto?: string;
+export interface InitialsAvatarProps {
+  name?: string;
+  size?: number;
+  fontFamily?: string;
+  textColor?: string;
 }
 
-const FUNDOS = [
+const BACKGROUNDS = [
   "#EF4444",
   "#F97316",
   "#EAB308",
@@ -17,32 +17,41 @@ const FUNDOS = [
 ];
 
 export default function InitialsAvatar({
-  nome = "?",
-  tamanho = 40,
-  fonte = "inherit",
-  corTexto = "#FFFFFF",
+  name = "?",
+  size = 40,
+  fontFamily = "inherit",
+  textColor = "#FFFFFF",
 }: InitialsAvatarProps) {
-  const tamanhoNome = nome.length;
-  const FundoEscolhido = FUNDOS[tamanhoNome % FUNDOS.length];
-  const inicial = nome.trim().charAt(0).toUpperCase();
+  const getHash = (str: string) => {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+      hash = (Math.imul(31, hash) + str.charCodeAt(i)) | 0;
+    }
+    return Math.abs(hash);
+  };
+
+  const safeName = name.trim();
+  const backgroundIndex = getHash(safeName) % BACKGROUNDS.length;
+  const backgroundColor = BACKGROUNDS[backgroundIndex];
+  const initial = safeName.length > 0 ? safeName.charAt(0).toUpperCase() : "?";
 
   return (
     <div
       style={{
-        width: tamanho,
-        height: tamanho,
-        backgroundColor: FundoEscolhido,
-        color: corTexto,
-        fontFamily: fonte,
+        width: size,
+        height: size,
+        backgroundColor,
+        color: textColor,
+        fontFamily,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        fontSize: tamanho / 2.2,
+        fontSize: size / 2.2,
         fontWeight: "bold",
         userSelect: "none",
       }}
     >
-      {inicial}
+      {initial}
     </div>
   );
 }
