@@ -5,15 +5,23 @@ export interface InitialsAvatarProps {
   textColor?: string;
 }
 
+// Expanded and optimized palette for contrast with white text
 const BACKGROUNDS = [
-  "#EF4444",
-  "#F97316",
-  "#EAB308",
-  "#22C55E",
-  "#3B82F6",
-  "#A855F7",
-  "#EC4899",
-  "#64748B",
+  "#EF4444", // Red
+  "#F97316", // Orange
+  "#F59E0B", // Amber
+  "#10B981", // Emerald
+  "#22C55E", // Green
+  "#14B8A6", // Teal
+  "#06B6D4", // Cyan
+  "#3B82F6", // Blue
+  "#6366F1", // Indigo
+  "#8B5CF6", // Violet
+  "#A855F7", // Purple
+  "#D946EF", // Fuchsia
+  "#EC4899", // Pink
+  "#F43F5E", // Rose
+  "#64748B", // Slate
 ];
 
 export default function InitialsAvatar({
