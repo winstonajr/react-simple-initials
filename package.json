@@ -20,7 +20,11 @@
     "initials",
     "ui"
   ],
-  "author": "WinstonAjr",
+  "author": "winstonajr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winstonajr/react-simple-initials"
+  },
   "license": "MIT",
   "peerDependencies": {
     "react": ">=16.8.0",
