@@ -20,10 +20,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          registry-url: "https://registry.npmjs.org"
 
       - name: Instalar dependências
         run: npm ci
 
-      - name: Publicar no NPM com Provenance
+      - name: Publicar no NPM
         run: npm publish --provenance

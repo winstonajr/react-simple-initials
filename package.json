@@ -23,7 +23,7 @@
   "author": "winstonajr",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/winstonajr/react-simple-initials"
+    "url": "git+https://github.com/winstonajr/react-simple-initials.git"
   },
   "license": "MIT",
   "peerDependencies": {
