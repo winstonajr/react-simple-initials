@@ -37,7 +37,6 @@ export default function InitialsAvatar({
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        borderRadius: "50%",
         fontSize: tamanho / 2.2,
         fontWeight: "bold",
         userSelect: "none",
